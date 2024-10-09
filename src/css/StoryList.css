@@ -1,0 +1,141 @@
+/* .story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+.story-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-list-container {
+    margin-top: 20px;
+}
+
+.story-list {
+    list-style: none;
+    padding: 0;
+}
+
+.story-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.story-item:hover {
+    transform: translateY(-5px);
+}
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.story-content {
+    margin-top: 10px;
+}
+
+.story-footer {
+    /* background-color: #fabbea; */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.story-footer a {
+    color: #493745;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.story-footer a:hover {
+    text-decoration: underline;
+}
+
+.user-interaction {
+    margin-top: 20px;
+}
+
+.love-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.love-button.active {
+    color: red;
+    animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown-toggle {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-toggle:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.option-list {
+    list-style: none;
+    padding: 0;
+}
+
+.option-item {
+    margin: 10px 0;
+}
+
+.famous-option-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.famous-option-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,12 @@
+# This are client site
+node_modules/
+
+# Environment variables
+.env
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Package metadata
+package.json

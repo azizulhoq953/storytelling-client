@@ -1,0 +1,505 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* app.js */
+/* Navigation Bar */
+.navigation {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.navigation .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.navigation ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.navigation ul li.dropdown {
+    position: relative;
+}
+
+.navigation ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+}
+
+.navigation ul li .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.navigation ul li .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Show dropdown when state is true */
+.navigation ul li.dropdown .dropdown-content {
+    display: block;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+/* end app.js */
+
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.story-container {
+    padding: 1rem;
+}
+
+.story-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 1rem;
+}
+
+.story-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.story-item:hover {
+    transform: scale(1.02);
+}
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-actions button {
+    margin-left: 0.5rem;
+}
+
+.choices-section {
+    margin-top: 1rem;
+}
+
+.user-interaction {
+    margin-top: 1rem;
+}
+
+.love-button {
+    width: 80px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.love-button.active {
+    color: red;
+}
+
+.story-item button:hover {
+    background: #0056b3;
+}
+
+
+
+.dropdown {
+    margin: 10px 0;
+}
+
+.dropdown button {
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #572df0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-content button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #218838;
+}
+
+.button-container {
+    display:inline-flex;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.button-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* StoryForm */
+
+.story-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.story-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fc2600;
+    cursor: pointer;
+}
+
+.add-choice-btn {
+    background-color: #4CAF50;
+}
+
+.remove-choice-btn {
+    background-color: #f80a0a;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: #008CBA;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #f44336;
+    font-weight: bold;
+}
+
+
+/* HomePages */
+
+.HomePage{
+    text-align: center;
+}
+
+
+
+/* Profile */
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+.error-message {
+    text-align: center;
+    color: #f44336;
+    font-weight: bold;
+}
+
+
+/* App.js */
+
+.navigation{
+    text-align: center;
+    
+}
+
+
+/* New  */
+.story-container {
+    padding: 20px;
+}
+
+.story-list {
+    list-style: none;
+    padding: 0;
+}
+
+.story-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Style for the dot menu button */
+.dot-menu {
+    position: relative; /* Ensure positioning for the menu content */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    padding: 0; /* Remove default padding */
+    font-size: 24px; /* Adjust font size of dots */
+}
+
+/* Style for the dots */
+.dot-menu::before {
+    content: '\2022 \2022 \2022'; /* Three dots */
+    color: black; /* Black color for the dots */
+    font-size: 24px; /* Adjust size if needed */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Style for the dot menu content */
+.dot-menu-content {
+    display: none; /* Hide content by default */
+    position: absolute; /* Position relative to the dot-menu button */
+    top: 100%; /* Position below the button */
+    right: 0; /* Align to the right */
+    background-color: white; /* Background color of the dropdown */
+    border: 1px solid #ccc; /* Border around the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the dropdown */
+    z-index: 1; /* Ensure dropdown is on top */
+    padding: 10px; /* Padding inside the dropdown */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Show the dropdown menu when hovering over the dot-menu button */
+.dot-menu:hover .dot-menu-content {
+    display: block;
+}
+
+/* Style for buttons inside the dropdown */
+.dot-menu-content button {
+    display: block; /* Make each button block level */
+    width: 100%; /* Full width */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    padding: 10px; /* Padding inside buttons */
+    text-align: left; /* Align text to the left */
+    cursor: pointer; /* Show pointer cursor on hover */
+    color: black; /* Font color for the buttons */
+}
+
+/* Change background color on hover */
+.dot-menu-content button:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+
+
+
+/* Container for the login form */
+form {
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error message style */
+p {
+    color: #383333; 
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+/* Style for form page */
+div {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* color: #970c0c; */
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+
