@@ -52,7 +52,7 @@ const App = () => {
             <div>
                 <nav className="navigation">
                     <div className="logo">
-                        StoryWorld
+                    <a href="/">StoryTelling-Platform</a> 
                         </div>
                     <ul>
                         <li><Link to="/">Home</Link></li>

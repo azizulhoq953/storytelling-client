@@ -155,7 +155,8 @@ const StoryList = () => {
                                     className={`love-button ${story.lovedByUser ? 'active' : ''}`}
                                     onClick={() => handleToggleLove(story._id)}
                                 >
-                                    {story.lovedByUser ? '💔' : '❤️'} {story.likes || 0}
+                                    {story.lovedByUser ? '💔' : '❤️'} 
+                                    <span className="like-count">{story.likes || 0}</span>
                                 </button>
                             </div>
                         </li>

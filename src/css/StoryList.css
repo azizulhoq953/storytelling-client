@@ -81,6 +81,15 @@
     animation: pulse 0.5s;
 }
 
+.like-count {
+    color: #0e0c0c; /* Light color for count */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+
 @keyframes pulse {
     0% {
         transform: scale(1);
