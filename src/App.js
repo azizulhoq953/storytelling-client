@@ -52,7 +52,7 @@ const App = () => {
             <div>
                 <nav className="navigation">
                     <div className="logo">
-                    <a href="/">StoryTelling-Platform</a> 
+                    Storytelling
                         </div>
                     <ul>
                         <li><Link to="/">Home</Link></li>
